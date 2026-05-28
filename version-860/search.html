@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>搜索-精选日韩视频-精选影片片单-热门内容持续更新</title>
+    <meta name="description" content="搜索精选日韩视频、热门影片、剧集、题材与标签。">
+    <meta name="keywords" content="搜索,精选日韩视频,日韩视频,精选片单,热门内容,视频更新,高清视频">
+    <link rel="stylesheet" href="./assets/site.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="./index.html" aria-label="精选日韩视频">
+            <span class="logo-mark">剧</span>
+            <span class="logo-text">精选日韩视频</span>
+        </a>
+        <nav class="main-nav" aria-label="主导航">
+            <a class="nav-link " href="./index.html">首页</a><a class="nav-link " href="./categories.html">分类</a><a class="nav-link " href="./ranking.html">排行榜</a><a class="nav-link " href="./latest.html">最新更新</a>
+        </nav>
+        <form class="search-form" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索视频..." aria-label="搜索视频">
+            <button type="submit" aria-label="搜索">搜索</button>
+        </form>
+        <button class="menu-toggle" type="button" aria-label="展开导航">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-nav">
+        <form class="mobile-search search-form" action="./search.html" method="get">
+            <input type="search" name="q" placeholder="搜索视频..." aria-label="搜索视频">
+            <button type="submit">搜索</button>
+        </form>
+        <a class="mobile-nav-link " href="./index.html">首页</a><a class="mobile-nav-link " href="./categories.html">分类</a><a class="mobile-nav-link " href="./ranking.html">排行榜</a><a class="mobile-nav-link " href="./latest.html">最新更新</a>
+    </div>
+</header>
+<main>
+    <section class="page-hero blue">
+        <div class="container">
+            <p>Search</p>
+            <h1>搜索结果</h1>
+            <span id="search-keyword">输入关键词查找感兴趣的影片。</span>
+        </div>
+    </section>
+    <section class="container section-block">
+        <div id="search-results" class="movie-grid grid-four"></div>
+        <div id="search-empty" class="empty-state">没有找到匹配内容。</div>
+    </section>
+</main>
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="footer-logo" href="./index.html">
+                <span class="logo-mark">剧</span>
+                <span>精选日韩视频</span>
+            </a>
+            <p>精选日韩视频与热门影片片单，按题材、热度和更新时间持续整理。</p>
+        </div>
+        <div>
+            <h2>栏目导航</h2>
+            <a href="./categories.html">影视分类</a>
+            <a href="./ranking.html">热度排行</a>
+            <a href="./latest.html">最近更新</a>
+        </div>
+        <div>
+            <h2>热门入口</h2>
+            <a href="./category-asia-1.html">日韩精选</a>
+            <a href="./category-drama-1.html">剧情佳作</a>
+            <a href="./category-suspense-1.html">悬疑犯罪</a>
+        </div>
+    </div>
+    <div class="footer-bottom">© 2026 精选日韩视频. 高清片单持续更新。</div>
+</footer>
+    <script src="./assets/site.js"></script>
+    <script src="./assets/search-data.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
